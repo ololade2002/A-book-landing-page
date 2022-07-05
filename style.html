@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<style>
+  section {
+    padding: 60px 0;
+  }
+    </style>
+<body>
+  <!--Alert-->
+  <div class="alert alert-primary alert-dismissible text-center  fade show" role="alert">
+    <strong>Hi Ololade,</strong> Welcome to the BookHunt!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close" ></button>
+  </div>
+
+<!--Navbar-->
+      <nav class="navbar navbar-expand-md  navbar-light  ">
+          <div class="container">
+              <a class="navbar-brand" href="#intro">
+              <i class="bi bi-snow2"></i>BookHunt
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                  aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="#topics">About The Book</a></li>
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="#getInTouch">Get In Touch</a></li>
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="#pricing">Pricing</a></li>
+                    <li class="nav-item ms-3 d-none d-md-inline"><a class="btn btn-primary " aria-current="page"  href="#pricing">Buy Now</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+       
+
+     <!--Intro-->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row  justify-content-center align-items-center">
+        <div class="col-md-5 ">
+<h1>
+  <div class="display-3">The Pursuit</div>
+  <div class="display-6 text-muted">English Garden Series</div>
+</h1>
+<p class="lead my-4">A story of love and getting what you want from your relationship</p>
+  <a href="#pricing"><button type="button" class="btn btn-primary btn-lg" >Buy Now</button></a>
+
+<a href="#sidebar" class="d-block mt-4" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Check out my other books</a>
+        </div>
+
+<div class="col-md-5 text-center ">
+  <span class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="The Pursuit">
+  <img src="./images/flower4.jpg" class="img-fluid" style="width: 300px;" alt="book">
+  </span>
+</div>
+
+        </div>
+      </div>
+    </section>
+      
+
+    <!--pricing section -->
+<section id="pricing" class="bg-info ">
+<div class="container">
+  
+  <div class="text-center mb-5">
+    
+    <h2> <i class="bi bi-stars"></i>Pricing Plan</h2> 
+    <p class="lead">Choose a pricing plan that suites you</p>
+  </div>
+  <div class="row align-items-center justify-content-center g-0">
+
+<div class="col-8 col-md-4">
+  <div class="card py-3" >
+    <div class="card-body  text-center">
+      <h4 class="card-title ">Starter Edition</h4>
+      <p class="card-subtitle lead mb-2  ">eBook download only</p>
+      <div class="fw-bold display-4 text-primary my-4">$12.99</div>
+      <p class="card-text lead text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum!</p>
+      <button class="btn btn-outline-primary btn-lg">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-9 col-md-4">
+  <div class="card border border-1 border-primary" >
+    <div class="card-header text-center text-primary">Most Popular</div>
+    <div class="card-body my-5 text-center">
+      <h4 class="card-title ">Complete Edition</h4>
+      <p class="card-subtitle lead mb-2  ">eBook download & all updates</p>
+      <div class="fw-bold display-4 text-primary my-4">$18.99</div>
+      <p class="card-text lead text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum!</p>
+      <button class="btn btn-outline-primary btn-lg">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="col-8 col-md-4">
+  <div class="card py-3" >
+    <div class="card-body text-center">
+      <h4 class="card-title ">Ultimate Edition</h4>
+      <p class="card-subtitle lead mb-2">Downloads,updates & extras</p>
+      <div class="fw-bold display-4 text-primary my-4">$24.99</div>
+      <p class="card-text lead text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum!</p>
+      <button class="btn btn-outline-primary btn-lg">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+</section>
+
+<!--About the book section-->
+<section id="topics" >
+  <div class="container">
+   <div class="text-center">
+    <h2> <i class="bi bi-stars"></i>Inside The Book</h2>
+    <p class="lead">A quick glance at what the book contains</p>
+   </div>
+   <div class="row justify-content-around align-items-center my-5">
+    <div class="col-md-4 mb-3">
+      <img src="./images/shelve1.JPG" style="width: 320px;" alt="shelve">
+    </div>
+
+<div class="col-12 col-md-6">
+  <div class="accordion" id="chapters">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-1" >
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+         data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+          Chapter 1 - Surviving Emergencies
+        </button>
+      </h2>
+      <div id="chapter-1" class="accordion-collapse collapse "
+      aria-labelledby="heading-1" data-bs-parent="#chapters">
+    <div class="accordion-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ullam optio numquam velit aliquid,
+         corrupti nostrum excepturi dolore laboriosam reprehenderit?</p>
+    </div>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+            Chapter 2 - Dealing With Debts
+          </button>
+        </h2>
+        <div id="chapter-2" class="accordion-collapse collapse "
+        aria-labelledby="heading-2" data-bs-parent="#chapters">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ducimus?
+             Dolorem eius inventore tempore. Provident non facilis, ratione consectetur ab 
+             corrupti similique repudiandae, voluptatibus alias maiores veniam, doloribus maxime iure.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+            Chapter 3 - Money Fears
+          </button>
+        </h2>
+        <div id="chapter-3" class="accordion-collapse collapse "
+        aria-labelledby="heading-3" data-bs-parent="#chapters">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, 
+            ducimus? Dolorem eius inventore tempore. Provident non facilis, ratione 
+            consectetur ab corrupti similique repudiandae, voluptatibus 
+            alias maiores veniam, doloribus maxime iure.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-4" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
+            Chapter 4 - The Love Game
+          </button>
+        </h2>
+        <div id="chapter-4" class="accordion-collapse collapse "
+        aria-labelledby="heading-4" data-bs-parent="#chapters">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ducimus? Dolorem eius inventore tempore. Provident non facilis, ratione consectetur ab corrupti similique repudiandae, voluptatibus alias maiores veniam, doloribus maxime iure.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-5" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#chapter-5" aria-expanded="true" aria-controls="chapter-5">
+            Chapter 5 - Life Happens
+          </button>
+        </h2>
+        <div id="chapter-5" class="accordion-collapse collapse "
+        aria-labelledby="heading-5" data-bs-parent="#chapters">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ducimus? Dolorem eius inventore tempore. Provident non facilis, ratione consectetur ab corrupti similique repudiandae, voluptatibus alias maiores veniam, doloribus maxime iure.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-6" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#chapter-6" aria-expanded="true" aria-controls="chapter-6">
+            Chapter 6 - Speaking Diffent
+          </button>
+        </h2>
+        <div id="chapter-6" class="accordion-collapse collapse "
+        aria-labelledby="heading-6" data-bs-parent="#chapters">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ducimus? Dolorem eius inventore tempore. Provident non facilis, ratione consectetur ab corrupti similique repudiandae, voluptatibus alias maiores veniam, doloribus maxime iure.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-7" >
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+           data-bs-target="#chapter-7" aria-expanded="true" aria-controls="chapter-7">
+            Chapter 7 - Keeping The Magic Of Love Alive
+          </button>
+        </h2>
+        <div id="chapter-7" class="accordion-collapse collapse "
+        aria-labelledby="heading-7" data-bs-parent="#chapters">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ducimus? Dolorem eius inventore tempore. Provident non facilis, ratione consectetur ab corrupti similique repudiandae, voluptatibus alias maiores veniam, doloribus maxime iure.</p>
+      </div>
+      </div>
+      </div>
+</div>
+
+   </div>
+  </div>
+</section>
+
+<!--Reviews-->
+<section id="reviews" class="bg-info">
+ <div class="container">
+  <div class="text-center mb-5">
+   
+      <h2><i class="bi bi-stars"></i>Book Review</h2>
+      <p class="lead">What People Have To Say About My Book</p>
+    </div>
+     <div class="row justify-content-center align-items-center">
+<div class="col-12 col-md-8">
+
+  <div class="list-group">
+    <div class="list-group-item py-3">
+      <div class="pb-2">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Best book i've read </h5>
+          <small>14<sup>th </sup>  June,2018</small>
+      </div>
+      <p class="mb-1"> The writing was so captivating and the characters were so believable,
+        The plot had so many twists and turns I could'nt put the book down
+        </p>
+      <small>Review by Wemimo</small>
+      </div>
+
+  <div class="list-group-item py-3">
+    <div class="pb-2">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+    </div>
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">This book is so amazing</h5>
+        <small>14<sup>th </sup>  June,2018</small>
+    </div>
+    <p class="mb-1"> The writing was so captivating and the characters were so believable,
+      The plot had so many twists and turns I could'nt put the book down
+      </p>
+    <small>Review by Ade</small>
+    </div>
+
+<div class="list-group-item py-3 " >
+  <div class="pb-2">
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-fill"></i>
+    <i class="bi bi-star-half"></i>
+  </div>
+  <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Thank you for this book</h5>
+      <small>21<sup>st </sup>  June,2018</small>
+  </div>
+  <p class="mb-1"> The writing was so captivating and the characters were so believable,
+    The plot had so many twists and turns I could'nt put the book down
+    </p>
+  <small>Review by Tayo</small>
+  </div>
+
+  <div class="list-group-item py-3">
+    <div class="pb-2">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      
+    </div>
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">This book is so amazing</h5>
+        <small>30<sup>th </sup>  June,2018</small>
+    </div>
+    <p class="mb-1"> The writing was so captivating and the characters were so believable,
+      The plot had so many twists and turns I could'nt put the book down
+      </p>
+    <small>Review by Amaka</small>
+    </div>
+
+ </div>
+
+  </div>
+ </div>
+</section>
+
+<!--Get In Touch-->
+<section id="getInTouch">
+<div class="container">
+  <div class="text-center mb-5">
+    <h2><i class="bi bi-stars"></i>Get In Touch</h2>
+    <p class="lead">Questions to ask? Fill out the form to contact me directly</p>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-6">
+     <form>
+
+      <label for="email" class="form-label">Email address</label>
+      <div class="mb-4  input-group">
+        <span class="input-group-text">
+          <i class="bi bi-envelope-fill"></i>
+        </span>
+     <input type="email" class="form-control" placeholder="eg.mario@example.com" >
+     <span class="input-group-text ">
+      <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+      <i class="bi bi-question-circle text-muted"></i>
+    </span>
+    </span>
+      </div>
+
+     <label for="Name" class="form-label">Name</label>
+     <div class="mb-4 input-group">
+      <span class="input-group-text ">
+        <i class="bi bi-person-fill"></i>
+      </span>
+     <input type="text" placeholder="eg.Mario Zoe" class="form-control">
+     <span class="input-group-text ">
+      <span class="tt" data-bs-placement="bottom" title="Enter your first name first">
+      <i class="bi bi-question-circle text-muted"></i>
+    </span>
+    </span>
+     </div>
+    
+     
+      <label for="select" class="form-label">What is your question about?</label>
+      <div class="input-group mb-4">
+        <span class="input-group-text">
+          <i class="bi bi-chat-right-dots-fill"></i>
+        </span>
+      <select class="form-select" name="select" id="select">
+        <option selected>Select one</option>
+        <option value="">Pricing Query</option>
+        <option value="">Content Query</option>
+        <option value="">Other Query</option>
+      </select>
+      </div>
+      <div class="form-floating mb-4 mt-4">
+        <textarea class="form-control"  id="query" style="height: 140px;"></textarea>
+        <label for="query" >Your query...</label>
+      </div>
+
+      <div class="text-center mb-4">
+      <button type="button" class="btn btn-primary " >Submit</button>
+    </div>
+
+     </form>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="bg-info">
+  <div class="container">
+<div class="text-center">
+  <h2><i class="bi bi-stars"></i>Stay In The Loop</h2>
+  <p class="lead">Get the latest updates</p>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8 text-center">
+    
+    <p class="text-muted my-4">Lorem, ipsum dolor sit amet consectetur a
+      dipisicing elit. Aperiam animi dolorem veniam cumque vero! Eaque, 
+      beatae, voluptate fugit cum repellat dolor minus distinctio sunt 
+      aspernatur possimus, quae vero natus eligendi. 
+      </p>
+
+     <!-- Button trigger modal -->
+     <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+        Register for Updates
+     </button>
+     
+     <!-- Modal -->
+     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" 
+     aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Get the latest updates</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  </button>
+              </div>
+          <div class="modal-body">
+            <div class="container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia id consequuntur, 
+                architecto doloribus quod animi placeat obcaecati ex possimus accusantium.</p>
+                <label for="email" class="form-label">Email address:</label>
+                <input type="email" class="form-control" placeholder="eg.mario@example.com">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+
+        
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"
+aria-labelledby="sidebar-label"> 
+<div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+  <button type="button" class="btn-close"data-bs-dismiss="offcanvas" aria-label="close" ></button>
+</div>
+<div class="offcanvas-body">
+  <p><strong>John Gray</strong> has written seven historic and contemporary romance and sci-fiction novels</p>
+
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button"
+      id="book-dropdown" data-bs-toggle="dropdown" >
+     Choose a book title
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+        <li>
+          <a href="#" class="dropdown-item">A Place Called Home</a>
+        </li>
+        <li> <a href="#" class="dropdown-item">Bamboo & Lace</a></li>
+        <li> <a href="#" class="dropdown-item">Sean Donovan</a></li>
+        <li> <a href="#" class="dropdown-item">The Rescue</a></li>
+        <li> <a href="#" class="dropdown-item">The Magic</a></li>
+        <li> <a href="#" class="dropdown-item">Us</a></li>
+        <li> <a href="#" class="dropdown-item">Wings of the morning</a></li>
+      </ul>
+    </div>
+</div>
+</div>
+  </div>
+ 
+
+
+
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+  <script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+      new bootstrap.Tooltip(t)
+    })
+  </script>
+</body>
+</html>
